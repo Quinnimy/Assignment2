@@ -1,6 +1,6 @@
 ﻿/*
 * Quinn Lamkin
-* Assignment 2
+* Assignment 2 Prototype 1
 * triggers losing if driving off road
 */
 using System.Collections;

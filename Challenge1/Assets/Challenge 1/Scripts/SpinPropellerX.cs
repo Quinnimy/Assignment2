@@ -14,6 +14,7 @@ public class SpinPropellerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rotates at 45 degree intervals
         propeller.transform.Rotate(0, 0, 45);
     }
 }

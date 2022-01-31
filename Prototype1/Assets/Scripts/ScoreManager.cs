@@ -1,6 +1,6 @@
 ﻿/*
 * Quinn Lamkin
-* Assignment 2
+* Assignment 2 Prototype 1
 * keeps track of score and game state
 */
 using System.Collections;

@@ -1,6 +1,6 @@
 ﻿/*
 * Quinn Lamkin
-* Assignment 2
+* Assignment 2 Prototype 1
 * Controls the player
 */
 using System.Collections;

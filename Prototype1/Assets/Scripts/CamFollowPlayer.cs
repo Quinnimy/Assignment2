@@ -1,6 +1,6 @@
 ﻿/*
 * Quinn Lamkin
-* Assignment 2
+* Assignment 2 Prototype 1
 * camera follows player truck
 */
 using System.Collections;

@@ -41,7 +41,7 @@ public class ScoreTracker : MonoBehaviour
             won = true;
             gameOver = true;
         }
-
+        //conditions game can end
         if(gameOver)
         {   
             //win condition text

@@ -15,6 +15,7 @@ public class ScoreZone : MonoBehaviour
         //if the player goes through it activates and increments score
         if(other.CompareTag("Player") && !activated)
         {
+            //sets activation so player cant get multiple points from same goal
             activated = true;
             ScoreTracker.score++;
         }
