@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4  Challenge 3
+* Handles spawning in objects
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +18,8 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("PrawnsObject", spawnDelay, spawnInterval);
+        //changed to "SpawnObjects to fix spawning
+        InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
     }
 

@@ -2,7 +2,8 @@
 * Quinn Lamkin
 * Assignment 4  Challenge 3
 * Controls player baloon
-*/using System.Collections;
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,10 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip moneySound;
     public AudioClip explodeSound;
 
+    //added for ground hit
+    public AudioClip bounceSound;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +37,8 @@ public class PlayerControllerX : MonoBehaviour
         //set reference variables to components
         playerRb = GetComponent<Rigidbody>();
 
+
+    
         //
 
         Physics.gravity *= gravityModifier;
@@ -45,10 +52,18 @@ public class PlayerControllerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
             playerRb.AddForce(Vector3.up * floatForce);
+        }
+        
+        //limiting movement up life previous assignment did with feeding animals
+        //however it has a lot of excessivr momentum
+        if (transform.position.y > 15)
+        {
+            transform.position = new Vector3(transform.position.x, 15, transform.position.z);
         }
     }
 
@@ -73,6 +88,30 @@ public class PlayerControllerX : MonoBehaviour
 
         }
 
+        //if player hits ground
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            //bounce back up
+            playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            //play sound effect
+            playerAudio.PlayOneShot(bounceSound);
+        }
+
     }
 
+
+    /*Didnt work
+    //to prevent player from going too high
+    private bool isLowEnough()
+    {
+        if (transform.position.y > 15)
+        {
+            return (true);
+        }
+        else
+        {
+            return (false);
+        }
+    }
+    */
 }
