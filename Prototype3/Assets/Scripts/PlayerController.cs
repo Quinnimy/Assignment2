@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Controls the player, allows them to jump
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

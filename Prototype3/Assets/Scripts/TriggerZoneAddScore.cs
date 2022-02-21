@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Increments score when trigger zone abaove prefab is hit
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

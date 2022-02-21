@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Handles showing the score and win/loss messages
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

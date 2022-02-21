@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Repeats the background like fred flinstones running by
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

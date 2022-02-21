@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Moves object left (background and obstacle)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

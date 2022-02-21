@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4 Prototype 3
+* Manages obstacles coming at player
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
