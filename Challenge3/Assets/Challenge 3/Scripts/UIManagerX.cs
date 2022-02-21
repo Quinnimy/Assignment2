@@ -45,7 +45,7 @@ public class UIManagerX : MonoBehaviour
         //loss condition: hit bomb 
         if (playerControllerScript.gameOver && !won)
         {
-            scoreText.text = "You Lose!" + "\n" + "Press R to Try Again!";
+            scoreText.text = "You Lose!" + "\n" + "Press R to try again!";
         }
 
         //win condition: 10 points
@@ -56,7 +56,7 @@ public class UIManagerX : MonoBehaviour
 
             // playerControllerScript.StopRunning();
 
-            scoreText.text = "You Win!" + "\n" + "Press R to Try Again!";
+            scoreText.text = "You Win!" + "\n" + "Press R to try again!";
         }
 
         //Press R to Restart if game over
