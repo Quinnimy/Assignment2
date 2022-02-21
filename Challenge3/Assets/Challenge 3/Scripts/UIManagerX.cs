@@ -48,8 +48,8 @@ public class UIManagerX : MonoBehaviour
             scoreText.text = "You Lose!" + "\n" + "Press R to try again!";
         }
 
-        //win condition: 10 points
-        if (score >= 10)
+        //win condition: 30 points
+        if (score >= 30)
         {
             playerControllerScript.gameOver = true;
             won = true;
