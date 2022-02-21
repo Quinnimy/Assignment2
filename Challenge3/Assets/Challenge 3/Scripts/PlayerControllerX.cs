@@ -1,9 +1,16 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4  Challenge 3
+* Controls player baloon
+*/using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
+
+   
+
     public bool gameOver;
 
     public float floatForce;
@@ -21,6 +28,12 @@ public class PlayerControllerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //added by meeee
+        //set reference variables to components
+        playerRb = GetComponent<Rigidbody>();
+
+        //
+
         Physics.gravity *= gravityModifier;
         playerAudio = GetComponent<AudioSource>();
 

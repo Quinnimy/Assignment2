@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 4  Challenge 3
+* Repeats Background
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
