@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Quinn Lamkin
+* Assignment 5A
+* keeps track of gem behavior and added score keeper
+* attach to gems
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,6 +32,9 @@ public class GemBehaviour : MonoBehaviour
 
 	void GemCollected()
 	{
+		//added for score
+		ScoreManager.score++;
+
 		gemCollider2D.enabled = false;
 		gemVisuals.SetActive (false);
 		collectedParticleSystem.SetActive (true);
