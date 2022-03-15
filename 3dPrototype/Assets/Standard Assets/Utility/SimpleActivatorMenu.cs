@@ -1,3 +1,8 @@
+/*
+* Quinn Lamkin
+* Assignment 5B
+* Menu script
+*/
 using System;
 using UnityEngine;
 using UnityEngine.UI;
