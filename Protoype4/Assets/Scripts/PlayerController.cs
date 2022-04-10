@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerUpIndicator;
 
+ 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
+       
     }
     private void OnTriggerEnter(Collider other)
     {
