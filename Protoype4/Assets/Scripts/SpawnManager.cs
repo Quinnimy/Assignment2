@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 7 Prototype 4
+ * handles spawning in icreasing amounts of enemies
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

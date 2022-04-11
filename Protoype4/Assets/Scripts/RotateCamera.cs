@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 7 Prototype 4
+ * allows camera control around a fixed point
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

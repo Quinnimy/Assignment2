@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 7 Challenge 4
+ * Spawns in enemies and powerups
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +25,8 @@ public class SpawnManagerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyCount = GameObject.FindGameObjectsWithTag("Powerup").Length;
+        //changed powerup to Enemy
+        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
         if (enemyCount == 0)
         {
@@ -47,14 +53,16 @@ public class SpawnManagerX : MonoBehaviour
         {
             Instantiate(powerupPrefab, GenerateSpawnPosition() + powerupSpawnOffset, powerupPrefab.transform.rotation);
         }
-
+        //////////////
         // Spawn number of enemy balls based on wave number
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < enemiesToSpawn; i++)
         {
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
 
         waveCount++;
+        //speeds up enemies each wave
+        EnemyX.speed += 5;
         ResetPlayerPosition(); // put player back at start
 
     }

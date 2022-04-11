@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 7 Prototype 4
+ * controls enemies behavior/movement
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,10 +1,16 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 7 Challenge 4
+ * Controls enemy behavior
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyX : MonoBehaviour
 {
-    public float speed;
+    //gave speed a value and made it static and public
+    public static float speed = 300.0f;
     private Rigidbody enemyRb;
     private GameObject playerGoal;
 
@@ -12,6 +18,8 @@ public class EnemyX : MonoBehaviour
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
+        //
+        playerGoal = GameObject.FindWithTag("PlayerGoal");
     }
 
     // Update is called once per frame
