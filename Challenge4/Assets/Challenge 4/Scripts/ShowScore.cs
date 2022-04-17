@@ -10,10 +10,10 @@ using UnityEngine.UI;
 
 public class ShowScore : MonoBehaviour
 {
+    public Text currentWave;
+   
 
-    public Text wave;
-
-    //ned to get current wave
+    //need to get current wave
     SpawnManagerX spawnManager;
 
 
@@ -27,6 +27,7 @@ public class ShowScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        wave.text = "Current wave: " + (spawnManager.waveCount - 1);
+        //display current wave on screen
+        currentWave.text = "Current Wave: " + spawnManager.waveCount;
     }
 }
