@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 8 Challenge 5 
+ * Manages game score and time and game state
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -21,11 +26,15 @@ public class GameManagerX : MonoBehaviour
     private float spaceBetweenSquares = 2.5f; 
     private float minValueX = -3.75f; //  x value of the center of the left-most square
     private float minValueY = -3.75f; //  y value of the center of the bottom-most square
-    
+
+    //timer variables
+    private float time = 60f;
+    public TextMeshProUGUI timeText;
+
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
-    public void StartGame()
+    public void StartGame(int difficulty)
     {
-        spawnRate /= 5;
+        spawnRate /= difficulty;
         isGameActive = true;
         StartCoroutine(SpawnTarget());
         score = 0;
@@ -70,14 +79,16 @@ public class GameManagerX : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "score";
+        //added + score
+        scoreText.text = "score: " + score;
     }
 
     // Stop game, bring up game over text and restart button
     public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(false);
+        //changed to true
+        restartButton.gameObject.SetActive(true);
         isGameActive = false;
     }
 
@@ -85,6 +96,16 @@ public class GameManagerX : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Update()
+    {
+        if (isGameActive)
+        {
+            time -= Time.deltaTime;
+            timeText.text = "Time: " + (int)time;
+            if (time <= 1) { GameOver(); }
+        }
     }
 
 }

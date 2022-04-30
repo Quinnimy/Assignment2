@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Quinn Lamkin
+ * Assignment 8 Challenge 5 
+ * Handles food targets attributes and how long they exist
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +32,9 @@ public class TargetX : MonoBehaviour
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+
+    //changed t OnMouseDown
+    private void OnMouseDown()
     {
         if (gameManagerX.isGameActive)
         {
