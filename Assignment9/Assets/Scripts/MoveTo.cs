@@ -1,4 +1,8 @@
-﻿// MoveTo.cs
+﻿/*
+ * Quinn Lamkin
+ * Assignment9
+ * Move to set object on mesh
+ */
 using UnityEngine;
 using UnityEngine.AI;
 public class MoveTo : MonoBehaviour

@@ -1,3 +1,9 @@
+/*
+ * Quinn Lamkin
+ * Assignment9
+ * Move to click, attach to player characterGenerates level for player to navigate
+ * added in mesh baker
+ */
 using UnityEngine;
 //added in from vid
 using UnityEngine.AI;
